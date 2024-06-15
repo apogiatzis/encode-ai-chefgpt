@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "chefgpt"
+version = "0.1.0"
+description = ""
+authors = ["Encode AI Bootcamp - Group 7"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.34.0"
+python-dotenv = "^1.0.1"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+chefgpt = "chefgpt.cli:cli"
