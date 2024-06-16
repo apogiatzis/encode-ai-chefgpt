@@ -43,7 +43,7 @@ poetry install
 
 Run ChefGPT
 ```
-poetry run chefgpt ask --chef <chef_name>
+poetry run chefgpt --chef <chef_name> ask
 ```
 
 
@@ -59,7 +59,7 @@ pip install git+https://github.com/apogiatzis/encode-ai-chefgpt.git
 
 Run ChefGPT
 ```
-OPENAI_KEY="sk-..." chefgpt ask --chef <chef_name>
+OPENAI_KEY="sk-..." chefgpt --chef <chef_name> ask
 ```
 
 ### Uninstall
