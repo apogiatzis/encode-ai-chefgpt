@@ -31,9 +31,9 @@ def cli(chef_ctx: ChefGPTContext, chef):
 
 @cli.command()
 @pass_chef_context
-def makerecipe(chef_ctx: ChefGPTContext):
-    """Your chef will prepare a recipe for your dish"""
-    dish = click.prompt('Please describe a dish', type=str)
+def ask(chef_ctx: ChefGPTContext):
+    """Ask your chef anything!"""
+    dish = click.prompt('What would you like to ask your Chef?\n', type=str)
     chef = chef_ctx.current_chef
     response = chef.get_recipe_for_dish(dish)
     
