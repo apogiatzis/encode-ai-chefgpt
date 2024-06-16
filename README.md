@@ -2,6 +2,8 @@
 
 This repository holds the weekend group project of week 1 for Encode AI Bootcamp. This is a python package which implements uses OPENAI API and prompt engineering to expose Chef GPT with some configurable personality  traits.
 
+A simple ChefGPT multi agent interaction experiment report can be found [here](./report/multiagent_report.md).
+
 ## Group Members' IDs
 - **76tsNrC**
 - **ipJZCWC**
