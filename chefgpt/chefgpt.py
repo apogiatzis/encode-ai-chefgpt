@@ -42,11 +42,16 @@ class ChefGPT:
             content=f"Suggest me a detailed recipe and the preparation steps for making {dish}",
             role="user"
         )
-        message_chunks = self.request_openai()
-        return "".join(message_chunks)
+        return self.request_openai()
+    
+    def ask_chef(self, question: str) -> str:
+        self.add_prompt_message(
+            content=question,
+            role="user"
+        )
+        return self.request_openai()
 
-
-    def request_openai(self):
+    def request_openai(self) -> str:
         stream = self.client.chat.completions.create(
             model=self.model,
             messages=self.prompt,
@@ -56,4 +61,4 @@ class ChefGPT:
         for chunk in stream:
             chunk_message = chunk.choices[0].delta.content or ""
             collected_messages.append(chunk_message)
-        return collected_messages
+        return "".join(collected_messages)

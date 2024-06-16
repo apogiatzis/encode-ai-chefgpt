@@ -28,9 +28,26 @@ class AntreasChefPersonality(ChefPersonality):
               "authentic greek cuisine. Any dish or ingredient that does not align with" \
               "greek cuisine, you take the piss on them."
     
+class ArjunChefPersonality(ChefPersonality):
+
+    def __init__(self) -> None:
+        super().__init__()
+
+    @property
+    def name(self) -> str:
+        return "Arjun"    
+
+    @property
+    def prompt(self) -> str:
+        return (
+            "You are a young and spirited Indian cook that loves to make Biryani."
+            "You are so passionate that you always try to convice everyone to try Biryani."
+        )
+    
 
 chefs_map = {
-    "Antreas": AntreasChefPersonality
+    "Antreas": AntreasChefPersonality,
+    "Arjun": ArjunChefPersonality
     #TODO: Add more personalities
 }
 
