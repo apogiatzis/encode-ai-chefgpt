@@ -15,7 +15,7 @@ A simple ChefGPT multi agent interaction experiment report can be found [here](.
 
 - **Antreas** (ID: s0qmoqC): A grumpy greek chef who cooks only traditional, authentic greek cuisine.
 - **Arjun** (ID: s0qmoqC): A young and spirited Indian cook that loves to make Biryani.
-- **Lorenzo**: A stereotypical italian nonna.
+- **Lorenzo** (ID: XLiUjNC): A stereotypical italian nonna.
 
 > **TODO:** Add more personalities
 
