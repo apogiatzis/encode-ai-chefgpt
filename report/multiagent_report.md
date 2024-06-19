@@ -1,4 +1,4 @@
-## Multi agent ChefGPT intereaction report
+## Multi agent ChefGPT Interaction report
 
 This reports aims to summarise and observe the interaction between multiple ChefGPT agents.
 
